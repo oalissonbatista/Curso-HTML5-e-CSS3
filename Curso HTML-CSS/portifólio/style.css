@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+div#inicio{
+    background-color: #3B0C0C;
+    margin: -40px -27px -10px -10px;
+    height: 120px;
+    max-width: 1860px;
+}
+div#meio{
+    background-color: #5D0707;
+    margin: -20px -27px -10px -10px;
+    height: 910px;
+}
+
+p#barra{
+    text-align: center;
+    font-size: 40px;
+    color: white;
+}
