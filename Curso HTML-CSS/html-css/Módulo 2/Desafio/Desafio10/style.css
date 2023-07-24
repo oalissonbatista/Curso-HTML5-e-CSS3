@@ -1,4 +1,8 @@
+@charset "UTF-8";
 
+:root{
+    --cor0: #84e1ad;
+}
 body{
     background-color: #84e1ad;
     margin: 0px 0px 0px 0px;  
@@ -22,16 +26,24 @@ div#inicial > h1{
     font-family: CursoEmVideo;
     src: url(fontes/idroid.otf);
 }
+
+@font-face {
+    font-family: Bebas;
+    src: url(fontes/BebasNeue-Regular.ttf);
+}
 div#inicial > h3{
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Bebas;
     text-align: center;
     color: white;
     font-size: 15px;
     padding-bottom: 10px;
 }
+div#inicial > h1{
+    font-family: Bebas;
+}
 div#inicial > button{  
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Bebas;
     text-decoration: none;
     padding-inline-start: 2%;
     background: none;
@@ -45,8 +57,9 @@ div#inicial{
 div#meio{
     background-color: white;
     block-size: auto;
-    margin-left: 125px;
-    margin-right: 125px;
+    margin: auto;
+    min-width: 320px;
+    max-width: 800px;
     margin-bottom: 0px;
     margin-top: 0px;
     padding: 10px;
@@ -87,14 +100,15 @@ img#terceira{
 }
 div#video{
     background-color: #1a5c38;
-    margin-left: 125px;
-    margin-right: 125px;
+    margin: auto;
+    max-width: 800px;
+    min-width: 320px;
     margin-bottom: 0px;
     margin-top: 0px;
     padding: 10px;
     box-shadow: 0px 0px 10px rgb(53, 51, 51);
 }
-div#video > video{
+div#video > iframe{
     width: 100%;
     height: 400px;
     margin: auto;
@@ -104,8 +118,9 @@ div#video > video{
 div#final {
     background-color: white;
     block-size: auto;
-    margin-left: 125px;
-    margin-right: 125px;
+    margin: auto;
+    max-width: 800px;
+    min-width: 320px;
     margin-bottom: 0px;
     margin-top: 0px;
     padding: 10px;
@@ -132,6 +147,7 @@ p{
 }
 h1{
     padding: 10px;
+    text-align: start;
 }
 h2{
     padding-left: 10px;
@@ -146,4 +162,8 @@ footer > p{
     margin-top: 10px;
     margin-bottom: 0px;color: white;
 
+}
+a{
+    color: #2fa866;
+    text-decoration: none;
 }
