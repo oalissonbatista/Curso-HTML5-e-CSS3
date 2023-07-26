@@ -145,6 +145,9 @@ div#dentro > ul{
     list-style-type: '\2714\00A0\00A0';
     columns: 2;
 }
+li{
+    text-align: start;
+}
 p{
     padding: 10px;
     text-indent: 40px;
