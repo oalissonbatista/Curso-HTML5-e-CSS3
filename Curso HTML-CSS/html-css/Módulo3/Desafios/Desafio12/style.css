@@ -1,0 +1,123 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+    /*body*/
+:root{
+    --font1: 'Passion';
+    --font2: 'Sriracha';
+}
+header{
+    background-color: black;
+    height: 220px;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+@font-face {
+    font-family: Passion;
+    src: url(fontes/PassionOne-Bold.ttf);
+}
+@font-face {
+    font-family: Sriracha;
+    src: url(fontes/Sriracha-Regular.ttf);
+}
+header > h1{
+    color: white;
+    font-family: var(--font1);
+    font-size: 80px;
+    text-align: center;
+    padding-top: 50px;
+    font-variant: small-caps;
+
+}
+header > p {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+header > p  {
+    color: white;
+}
+header > p > strong >  a{
+    color: white;
+    text-decoration: none;
+}
+header > p > strong >  a:hover{
+    text-decoration: underline;
+}
+section#imagem1{
+    height: 2000px;
+    width: 100%;
+    background-image: url(imagens/background001.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right center;
+}
+section#imagem1.verso1{
+    height: 600px;
+}
+section#imagem1.verso1 > article{
+    background: white;
+    width: 100%;
+    height: 600px;
+}
+section#imagem1.verso1 > article> p{
+    padding-left: 30px;
+    font-family: var(--font2);
+    font-size: 30px;
+}
+article{
+    padding-top: 90px;
+}
+article.verso2{
+    margin-left: 30px;
+    width: 355px;
+}
+section#imagem1.verso2{
+    height: 600px;
+}
+section#imagem1.verso2 > article.verso2> p{
+    padding-left: 5px;
+    font-family: var(--font2);
+    font-size: 30px;
+    color: white;
+    background-color: black; opacity:0.8;filter:alpha(opacity=40);
+
+}
+
+section#imagem1.verso3{
+    height: 1000px;
+}
+
+article.verso3{
+    padding-bottom: 110px;
+    padding-left: 30px;
+    margin-bottom: 30px;
+}
+
+section#imagem1.verso3 >article{
+    background-color: white;
+}
+
+section#imagem1.verso3 >article >p{
+    font-family: var(--font2);
+    padding-left: 5px;
+    font-family: var(--font2);
+    font-size: 30px;
+}
+
+section#imagem2{
+    height: 2000px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: left center;
+    background-image: url(imagens/background002.jpg);
+}
+
+
