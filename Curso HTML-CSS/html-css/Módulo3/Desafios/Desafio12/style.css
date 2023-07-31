@@ -5,16 +5,10 @@
     padding: 0px;
     border: 0px;
 }
-    /*body*/
 :root{
     --font1: 'Passion';
     --font2: 'Sriracha';
-}
-header{
-    position: relative;
-    background-color: black;
-    height: 35vw;
-    max-height: 330px;
+
 }
 @font-face {
     font-family: Passion;
@@ -24,28 +18,26 @@ header{
     font-family: Sriracha;
     src: url(fontes/Sriracha-Regular.ttf);
 }
+header{
+    position: relative;
+    background-color: black;
+    height: 35vw;
+    max-height: 330px;
+}
+
 header > h1{
-    position: absolute;
+    padding-top: 50px;
     color: white;
     font-family: var(--font1);
     font-size: 10vw;
-    width: 70vw;
     text-align: center;
     font-variant: small-caps;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-
 }
 header > p {
     font-family: sans-serif;
     text-align: center;
     color: white;
-    position: absolute;
-    top: 70%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-
+    padding-bottom: 50px;
 }
 header > p > strong >  a{
     color: white;
@@ -58,27 +50,24 @@ a{
 a:hover{
     text-decoration: underline;
 }
-article{
-    padding-top: 60px;
-}
 section#normal1{
-    padding-bottom: 8vh;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
 }
-section#normal1 > article.verso1{
-    background: white;
-    width: 96%;
-    height: 50vw;
+article{ 
+    padding-left: 30px;
+}
+p{
+    line-height: 2em;
 }
 section#normal1 > article.verso1 > p{
-    padding-left: 30px;
     font-family: var(--font2);
     font-size: 3.5vw;
 }
 section#imagem1{
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.514) inset;
-    padding-top: 8vh;
-    padding-bottom: 8vh;
-    width: 100%;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
     background-image: url(imagens/background001.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -86,47 +75,38 @@ section#imagem1{
     background-position: right center; 
 }
 section#imagem1 > article{
-    background-color: black; opacity:0.5;
+    background-color: rgba(0, 0, 0, 0.459);
     margin-left: 30px;
     padding: 0px;
 }
 section#imagem1 > article.verso2{
-    background-color: black; opacity:0.6;
-    padding-left: 6px;
-    width: 42vw;
+    padding: 5px;
+    display: inline-block; /*para ajustar ao tamanho*/
 }
 section#imagem1 > article.verso2 > p{
     font-family: var(--font2);
     font-size: 3.5vw;
     color: white;
-}
-
-article.verso3{
-    padding-bottom: 110px;
-    padding-left: 30px;
-    margin-bottom: 30px;
+    text-shadow: 1px 1px 0px black;
 }
 
 section#normal2{
-    padding-bottom: 8v
+    padding-top: 10vh;
+    padding-bottom: 10vh;
 }
 section#normal2>article{
     background-color: white;
-    width: 50%;
 }
-
 section#normal2 >article >p{
     font-family: var(--font2);
     padding-left: 5px;
     font-family: var(--font2);
     font-size: 3.5vw;
 }
-
 section#imagem2{
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.514) inset;
-    padding-top: 8vh;
-    padding-bottom: 8vh;
-    width: 100%;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -135,27 +115,23 @@ section#imagem2{
 }
 
 section#imagem2 > article{
-    background-color: black; opacity:0.5;
+    background-color: rgba(0, 0, 0, 0.459);
     margin-left: 30px;
     padding: 0px;
 }
 section#imagem2 > article.verso4{
-    padding-left: 6px;
-    width: 42vw;
+    padding: 5px;
+    display: inline-block;  /*para ajustar ao tamanho*/
 }
 section#imagem2 > article.verso4> p{
     font-family: var(--font2);
     font-size: 3.5vw;
     color: white;
-}
-
-article.verso5{
-    padding-bottom: 30px;
-    padding-left: 30px;
+    text-shadow: 1px 1px 0px black;
 }
 section#normal3{
-    margin-bottom: 60px;
-    padding-bottom: 8vh;
+    padding-top: 10vh;
+    padding-bottom: 15vh;
 
 }
 section#normal3 >article{
@@ -168,17 +144,11 @@ section#normal3 >article >p{
     font-family: var(--font2);
     font-size: 3.5vw;
 }
-
 footer{
-    width: 100%;
     background-color: black;
 }
 footer >p {
     text-align: center;
     font-family: sans-serif;
-    color: white;
     padding: 10px;
 }
-
-
-
