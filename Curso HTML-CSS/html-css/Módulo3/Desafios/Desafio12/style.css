@@ -11,12 +11,10 @@
     --font2: 'Sriracha';
 }
 header{
+    position: relative;
     background-color: black;
     height: 35vw;
-    max-height: 280px;
-    padding: 0px;
-    margin: 0px;
-    border: 0px;
+    max-height: 330px;
 }
 @font-face {
     font-family: Passion;
@@ -27,18 +25,27 @@ header{
     src: url(fontes/Sriracha-Regular.ttf);
 }
 header > h1{
+    position: absolute;
     color: white;
     font-family: var(--font1);
     font-size: 10vw;
+    width: 70vw;
     text-align: center;
-    padding-top: 50px;
     font-variant: small-caps;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 
 }
 header > p {
     font-family: sans-serif;
     text-align: center;
     color: white;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
 }
 header > p > strong >  a{
     color: white;
@@ -52,54 +59,45 @@ a:hover{
     text-decoration: underline;
 }
 article{
-    padding-top: 90px;
-}
-section#imagem1{
-    height: 1000px;
-    width: 100%;
-    background-image: url(imagens/background001.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: right center;
+    padding-top: 60px;
 }
 section#normal1{
-    height: 70vw;
-    max-height: 70vw;
-    margin-bottom: 90px;
+    padding-bottom: 8vh;
 }
 section#normal1 > article.verso1{
     background: white;
     width: 96%;
-    height: 50px;
+    height: 50vw;
 }
 section#normal1 > article.verso1 > p{
     padding-left: 30px;
     font-family: var(--font2);
     font-size: 3.5vw;
 }
-
-
-article.verso2{
-    width: 355px;
-}
 section#imagem1{
-    height: 200px;
-    height: 73vw;
-    max-height: 1000px;
-    padding-top: 5vw;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.514) inset;
+    padding-top: 8vh;
+    padding-bottom: 8vh;
+    width: 100%;
+    background-image: url(imagens/background001.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right center; 
 }
 section#imagem1 > article{
     background-color: black; opacity:0.5;
     margin-left: 30px;
     padding: 0px;
-    width: 56vw;
-    height: 50vw;
 }
-section#imagem1 > article.verso2> p{
-    padding-left: 30px;
+section#imagem1 > article.verso2{
+    background-color: black; opacity:0.6;
+    padding-left: 6px;
+    width: 42vw;
+}
+section#imagem1 > article.verso2 > p{
     font-family: var(--font2);
-    font-size: 4vw;
+    font-size: 3.5vw;
     color: white;
 }
 
@@ -109,13 +107,15 @@ article.verso3{
     margin-bottom: 30px;
 }
 
-section#normal >article{
+section#normal2{
+    padding-bottom: 8v
+}
+section#normal2>article{
     background-color: white;
-    width: 100%;
-    height: 90vw;
+    width: 50%;
 }
 
-section#normal >article >p{
+section#normal2 >article >p{
     font-family: var(--font2);
     padding-left: 5px;
     font-family: var(--font2);
@@ -123,53 +123,54 @@ section#normal >article >p{
 }
 
 section#imagem2{
-    height: 1000px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.514) inset;
+    padding-top: 8vh;
+    padding-bottom: 8vh;
     width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: left center;
     background-image: url(imagens/background002.jpg);
+}
 
-}
-article.verso4{
-    padding-bottom: 110px;
-    padding-left: 10px;
-    margin-bottom: 30px;
+section#imagem2 > article{
+    background-color: black; opacity:0.5;
     margin-left: 30px;
-    width: 365px;
+    padding: 0px;
 }
-section#imagem2{
-    background-color: white;
-    height: 560px;
+section#imagem2 > article.verso4{
+    padding-left: 6px;
+    width: 42vw;
 }
 section#imagem2 > article.verso4> p{
-    padding-left: 5px;
     font-family: var(--font2);
-    font-size: 30px;
+    font-size: 3.5vw;
     color: white;
-    background-color: black; opacity:0.4;filter:alpha(opacity=40);
-
 }
-
 
 article.verso5{
     padding-bottom: 30px;
     padding-left: 30px;
-    margin-bottom: 30px;
 }
+section#normal3{
+    margin-bottom: 60px;
+    padding-bottom: 8vh;
 
-section#normal >article{
+}
+section#normal3 >article{
     background-color: white;;
 }
 
-section#normal >article >p{
+section#normal3 >article >p{
     font-family: var(--font2);
     padding-left: 5px;
     font-family: var(--font2);
     font-size: 3.5vw;
 }
+
 footer{
+    width: 100%;
     background-color: black;
 }
 footer >p {
