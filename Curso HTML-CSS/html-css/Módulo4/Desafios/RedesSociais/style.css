@@ -4,7 +4,7 @@
     margin: 0px;
 }
 body{
-    background: url(imagens/fundo-madeira.jpg) no-repeat top center;
+    background: url(imagens/fundo.jpg) no-repeat top center;
     background-size: cover;
     background-attachment: fixed;
     height: 97vh;
