@@ -1,0 +1,40 @@
+body{
+    background: url(imagens/fundo-madeira.jpg) no-repeat top center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 97vh;
+    width: 97vw;
+    position: relative;
+}
+.iphone{
+    display: block;
+    margin: auto;
+    position:absolute;
+    left: 50%;
+    top:50%;
+    transform:              
+    translate(-50%,-50%);
+
+}
+iframe{
+    display: block;
+    margin: auto;
+    position: absolute;
+    width: 267px;
+    height: 466px;
+    left: 50%;
+    top:50%;
+    transform:              
+    translate(-50%,-50%);
+}
+#redes-sociais{
+    text-align: right;
+    display: block;
+}
+picture{
+    display: block;
+    margin: 20px;
+}
+img{
+    border-radius: 50px;
+}
