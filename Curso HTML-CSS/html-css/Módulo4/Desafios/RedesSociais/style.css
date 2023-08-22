@@ -11,6 +11,10 @@ body{
     width: 97vw;
     position: relative;
 }
+::-webkit-scrollbar{
+    width: 0px;
+    height: 0px;
+}
 .iphone{
     display: block;
     margin: auto;
